@@ -54,6 +54,10 @@ function App() {
         console.log("⏳ Uploading audio to server...");
 
         try {
+          // const response = await fetch('http://localhost:5000/upload-audio', {
+          //   method: 'POST',
+          //   body: formData,
+          // });
           const response = await fetch('https://recipe-backend-tcrn.onrender.com/upload-audio', {
             method: 'POST',
             body: formData,
